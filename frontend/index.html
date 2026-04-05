@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Secretos Ocultos de la IA | Domina ChatGPT y Multiplica tus Ingresos</title>
+    <meta name="description"
+        content="Descubre cómo la Inteligencia Artificial está cambiando el juego y cómo tú puedes aprovecharlo hoy mismo.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#05070a',
+                        card: '#111827',
+                        neon: '#00e5ff',
+                        purple: '#9d4edd',
+                        accent: '#ff2a5f'
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'hero-glow': 'radial-gradient(circle at 50% -20%, rgba(157, 78, 221, 0.4), rgba(5, 7, 10, 1) 60%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Estilos Adicionales Personalizados -->
+    <style>
+        body {
+            background-color: #05070a;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        /* Animaciones para Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glassmorphism */
+        .glass {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Efecto de texto gradiente */
+        .text-gradient {
+            background: linear-gradient(135deg, #00e5ff, #9d4edd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* AdSense Placeholder Area (solo para propósitos visuales en desarrollo) */
+        .adsbygoogle {
+            display: block;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px dashed rgba(255, 255, 255, 0.1);
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .adsbygoogle::before {
+            content: "Espacio para Anuncio (AdSense o similar)";
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Ocultar Barra de Scrool de los Modales */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-purple selection:text-white">
+
+    <!-- HERO / HOOK SECTION -->
+    <header class="relative min-h-[90vh] flex items-center justify-center bg-hero-glow overflow-hidden px-4 py-20">
+        <!-- Decoración de fondo -->
+        <div
+            class="absolute top-1/4 left-10 w-72 h-72 bg-purple opacity-20 rounded-full blur-[100px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-1/4 right-10 w-96 h-96 bg-neon opacity-10 rounded-full blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <div
+                class="inline-block mb-6 px-4 py-1.5 rounded-full border border-purple/30 bg-purple/10 text-purple text-sm font-semibold tracking-wide reveal">
+                LA REVOLUCIÓN YA EMPEZÓ 🚀
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-heading font-black leading-tight mb-8 reveal"
+                style="transition-delay: 100ms;">
+                ¿Estás perdiendo la oportunidad de tu vida por <span class="text-gradient">no saber usar la IA</span>?
+            </h1>
+
+            <p class="text-lg md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto font-medium leading-relaxed reveal"
+                style="transition-delay: 200ms;">
+                Mientras tú dudas y usas ChatGPT como un simple buscador, otros están automatizando sus ingresos y
+                multiplicando su productividad x10. Descubre los secretos que la élite digital no te cuenta.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 reveal"
+                style="transition-delay: 300ms;">
+                <button onclick="openModal('checkout-modal')"
+                    class="group relative px-8 py-4 bg-white text-dark font-bold text-lg rounded-xl overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_40px_rgba(157,78,221,0.5)] transition-all duration-300">
+                    <span class="relative z-10 flex items-center gap-2">
+                        Quiero el PDF Completo <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                    <div
+                        class="absolute inset-0 h-full w-0 bg-gradient-to-r from-neon to-purple transition-all duration-300 ease-out group-hover:w-full z-0">
+                    </div>
+                </button>
+                <a href="#contenido"
+                    class="px-8 py-4 text-gray-300 font-semibold text-lg hover:text-white transition-colors">
+                    Sigue leyendo ↓
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN BLOG CONTENT (ENGAGEMENT) -->
+    <main id="contenido" class="max-w-3xl mx-auto px-4 py-20 relative">
+
+        <!-- PREGUNTA 1 -->
+        <article class="mb-16 reveal">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-white border-l-4 border-neon pl-4">
+                ¿Realmente la IA puede reemplazar mi trabajo o ayudarme a ganar más?
+            </h2>
+            <div class="prose prose-invert prose-lg text-gray-300">
+                <p class="mb-4">
+                    Seamos directos: La IA no te va a reemplazar. <strong class="text-white">Una persona usando IA es
+                        quien te va a reemplazar.</strong>
+                </p>
+                <p class="mb-4">
+                    La mayoría de la gente cree que herramientas como ChatGPT son sólo juguetes para escribir poemas o
+                    hacer resúmenes. El 1% de los usuarios, en cambio, lo usa para estructurar negocios, analizar datos
+                    de mercado e incluso programar aplicaciones enteras sin saber código.
+                </p>
+                <p>
+                    Si hoy dedicas horas a tareas repetitivas, estás dejando dinero sobre la mesa. La inteligencia
+                    artificial te permite clonar tu esfuerzo, permitiéndote facturar como una agencia entera siendo una
+                    sola persona.
+                </p>
+            </div>
+        </article>
+
+        <!-- ESPACIO ADSENSE 1 -->
+        <div class="w-full my-12 reveal">
+            <!-- INSTRUCCIÓN: Pega tu código de AdSense debajo de esta línea y borra el div .adsbygoogle actual -->
+            <div class="adsbygoogle h-[250px] w-full max-w-[728px] mx-auto"></div>
+            <!-- / INSTRUCCIÓN -->
+        </div>
+
+        <!-- PREGUNTA 2 -->
+        <article class="mb-16 reveal">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-white border-l-4 border-purple pl-4">
+                "He intentado usar ChatGPT pero me da respuestas genéricas... ¿qué hago mal?"
+            </h2>
+            <div class="prose prose-invert prose-lg text-gray-300">
+                <p class="mb-4">
+                    Este es el error número uno. Si tratas a la IA como un buscador de Google barato, te dará resultados
+                    baratos.
+                </p>
+                <p class="mb-4">
+                    El secreto no radica en la herramienta, sino en el <strong class="text-neon">Prompt
+                        Engineering</strong> (Ingeniería de Prompts). Necesitas darle contexto, un rol específico,
+                    restricciones y un formato de salida.
+                </p>
+                <div class="glass p-6 rounded-xl border-l-4 border-accent mb-6">
+                    <p class="text-white font-medium italic mb-2">"Las palabras precisas que le dices a la máquina,
+                        determinan los ceros que se agregan a tu cuenta de banco."</p>
+                </div>
+                <p>
+                    En nuestra guía, no perdemos el tiempo; te damos las plantillas exactas copiar y pegar que nosotros
+                    usamos para generar miles de dólares al mes en servicios que hacemos en menos de 20 minutos.
+                </p>
+            </div>
+        </article>
+
+        <!-- SECCIÓN INTERMEDIA: CONVERSIÓN -->
+        <section class="my-20 reveal relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-neon to-purple opacity-30 blur-lg rounded-3xl"></div>
+            <div class="relative glass p-8 md:p-12 rounded-3xl text-center">
+                <h3 class="text-3xl md:text-4xl font-heading font-bold mb-4">
+                    Si este breve artículo ya te abrió los ojos...
+                </h3>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Imagina tener el sistema completo paso a paso en tus manos. El <strong class="text-white">"Manual
+                        del Hacker de la IA" (PDF)</strong> contiene más de 100 Prompts de alto valor y guías visuales.
+                </p>
+                <button onclick="openModal('checkout-modal')"
+                    class="w-full md:w-auto px-10 py-5 bg-gradient-to-r from-neon to-purple text-white font-heading font-bold text-xl rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex justify-center items-center gap-3 mx-auto">
+                    Descargar Guía Inmediatamente <i class="fa-solid fa-lock text-sm"></i>
+                </button>
+                <p class="mt-4 text-sm text-gray-400"><i class="fa-solid fa-shield-halved text-green-400 mr-1"></i>
+                    Garantía de reembolso de 7 días. Pago 100% seguro.</p>
+            </div>
+        </section>
+
+        <!-- PREGUNTA 3 -->
+        <article class="mb-16 reveal">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6 text-white border-l-4 border-accent pl-4">
+                ¿Realmente puedo monetizar esto sin saber programar?
+            </h2>
+            <div class="prose prose-invert prose-lg text-gray-300">
+                <p class="mb-4">
+                    100% SÍ. Existen miles de dueños de negocios tradicionales que no tienen idea de qué es "Midjourney"
+                    o "ChatGPT Avanzado".
+                </p>
+                <p class="mb-4">
+                    Con el PDF aprenderás cómo empaquetar resultados generados por IA (como copys para redes sociales,
+                    planes de contenido, o imágenes para campañas publicitarias) y venderlos como servicios premium.
+                </p>
+                <ul class="list-none space-y-4 my-6">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-neon mt-1"></i>
+                        <span><strong>Creación de Contenido:</strong> Redacta en 5 minutos artículos para blogs que se
+                            cobran a $50-$100 cada uno.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-neon mt-1"></i>
+                        <span><strong>Generación de Imágenes:</strong> Diseña logotipos e ilustraciones sin tocar
+                            Photoshop.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-neon mt-1"></i>
+                        <span><strong>Consultoría:</strong> Cobra por enseñarle a empresas a integrar ChatGPT en sus
+                            flujos diarios.</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ESPACIO ADSENSE 2 -->
+        <div class="w-full my-12 reveal">
+            <!-- INSTRUCCIÓN: Pega tu código de AdSense debajo de esta línea -->
+            <div class="adsbygoogle h-[250px] w-full max-w-[728px] mx-auto"></div>
+            <!-- / INSTRUCCIÓN -->
+        </div>
+
+    </main>
+
+    <!-- SECCIÓN FINAL (CIERRE Y URGENCIA) -->
+    <section class="bg-card py-20 relative border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center reveal">
+            <h2 class="text-4xl md:text-6xl font-heading font-black mb-6">
+                El futuro no espera. <span
+                    class="text-accent underline decoration-4 decoration-neon underline-offset-8">Tú tampoco
+                    deberías.</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                No arriesgues quedarte obsoleto en la nueva economía. Accede al manual definitivo hoy, antes de que el
+                precio vuelva a la normalidad de $49.00 USD.
+            </p>
+
+            <div class="flex flex-col items-center gap-6">
+                <div class="text-5xl font-heading font-bold shadow-lg text-white">
+                    <span class="line-through text-gray-500 text-3xl mr-2">$49.00</span>$19.99
+                </div>
+
+                <div class="flex flex-col items-center my-4">
+                    <p class="text-accent font-bold mb-2 uppercase tracking-wide flex items-center gap-2">
+                        <i class="fa-solid fa-clock"></i> ¡Esta oferta expira en:
+                    </p>
+                    <div id="contador-oferta" class="text-xl">
+                        <!-- El timer se inyectará aquí desde script.js -->
+                    </div>
+                </div>
+
+                <button onclick="openModal('checkout-modal')"
+                    class="w-full sm:w-auto px-12 py-5 bg-white text-dark hover:bg-neon hover:text-dark font-black text-xl rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(0,229,255,0.6)] transform hover:-translate-y-1 relative group overflow-hidden">
+                    <span class="relative z-10">OBTENER ACCESO INSTANTÁNEO ⚡</span>
+                </button>
+
+                <div class="flex gap-4 mt-6 text-2xl text-gray-500">
+                    <i class="fa-brands fa-cc-mastercard hover:text-white transition-colors"></i>
+                    <i class="fa-brands fa-cc-visa hover:text-white transition-colors"></i>
+                    <i class="fa-brands fa-paypal hover:text-white transition-colors"></i>
+                    <i class="fa-brands fa-bitcoin hover:text-white transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Link para FAQs modal -->
+            <button onclick="openModal('faq-modal')"
+                class="mt-12 text-gray-500 hover:text-white underline text-sm transition-colors">
+                ¿Tienes dudas? Lee las Preguntas Frecuentes
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-10 border-t border-gray-900 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Inteligencia Artificial Masters. Todos los derechos reservados.</p>
+        <div class="mt-4 flex justify-center gap-6">
+            <a href="#" class="hover:text-white transition">Términos</a>
+            <a href="#" class="hover:text-white transition">Privacidad</a>
+            <a href="#" class="hover:text-white transition">Contacto</a>
+        </div>
+    </footer>
+
+    <!-- MODAL DE CHECKOUT (PAGOS) -->
+    <div id="checkout-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal('checkout-modal')"></div>
+
+        <!-- Modal Content -->
+        <div class="relative w-full max-w-md bg-card rounded-2xl shadow-2xl border border-gray-700 m-4 flex flex-col max-h-[90vh] overflow-hidden transform scale-95 transition-transform duration-300"
+            id="checkout-content">
+
+            <!-- Botón Cerrar -->
+            <button onclick="closeModal('checkout-modal')"
+                class="absolute top-4 right-4 text-gray-400 hover:text-white z-10 p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="p-6 md:p-8 overflow-y-auto no-scrollbar">
+                <div class="text-center mb-8">
+                    <div
+                        class="w-16 h-16 bg-purple/20 text-purple rounded-full flex items-center justify-center text-3xl mx-auto mb-4 border border-purple/50">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-white mb-2">Manual Hacker de IA</h3>
+                    <p class="text-gray-400 text-sm">Versión Completa + Actualizaciones de por vida.</p>
+                    <div class="text-4xl font-bold text-white mt-4">$19.99 <span
+                            class="text-sm text-gray-500 font-normal">USD</span></div>
+                </div>
+
+                <div class="space-y-4">
+                    <p class="text-sm font-semibold text-gray-400 uppercase tracking-wider text-center mb-4">Selecciona
+                        tu método de pago</p>
+
+
+                    <!-- MERCADO PAGO -->
+                    <button onclick="procesarPago('mercadopago')"
+                        class="w-full flex items-center justify-between p-4 bg-[#009ee3] hover:bg-[#0088c4] transition-colors rounded-xl font-bold text-white group">
+                        <span class="flex items-center gap-3">
+                            <i class="fa-solid fa-handshake"></i> Mercado Pago
+                        </span>
+                        <i
+                            class="fa-solid fa-chevron-right opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </button>
+
+                    <!-- PAYPAL -->
+                    <button onclick="procesarPago('paypal')"
+                        class="w-full flex items-center justify-between p-4 bg-[#ffc439] hover:bg-[#eebb22] transition-colors rounded-xl font-bold text-[#003087] group">
+                        <span class="flex items-center gap-3">
+                            <i class="fa-brands fa-paypal text-xl"></i> PayPal
+                        </span>
+                        <i
+                            class="fa-solid fa-chevron-right opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </button>
+                </div>
+
+                <div class="mt-6 text-center text-xs text-gray-500">
+                    <p><i class="fa-solid fa-lock mr-1"></i> Entorno de pago seguro y cifrado. La descarga del archivo
+                        PDF llegará a tu correo instantáneamente después de la verificación del pago.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FAQs -->
+    <div id="faq-modal"
+        class="fixed inset-0 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal('faq-modal')"></div>
+        <div class="relative w-full max-w-2xl bg-card rounded-2xl shadow-2xl border border-gray-700 m-4 flex flex-col max-h-[85vh] overflow-hidden transform scale-95 transition-transform duration-300"
+            id="faq-content">
+            <div class="flex justify-between items-center p-6 border-b border-gray-800">
+                <h3 class="text-2xl font-heading font-bold text-white">Preguntas Frecuentes</h3>
+                <button onclick="closeModal('faq-modal')" class="text-gray-400 hover:text-white p-2">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-6 no-scrollbar">
+                <div>
+                    <h4 class="text-white font-bold mb-2">¿Cómo recibo el PDF?</h4>
+                    <p class="text-gray-400 text-sm">Al confirmar el pago, te redigiremos a una página de descarga
+                        secreta y te enviaremos un correo con un link de respaldo válido de por vida.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-2">¿Necesito conocimientos previos sobre programación para
+                        aplicar el contenido?</h4>
+                    <p class="text-gray-400 text-sm">No, está diseñado para principiantes completos y emprendedores; 0
+                        código requerido, todo funciona con el lenguaje natural.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-2">¿Ofrecen garantía?</h4>
+                    <p class="text-gray-400 text-sm">Sí, tienes 7 días de garantía. Si lees los manuales, aplicas los
+                        prompts y no ves el valor inmediato superando 10X lo invertido, te devolvemos el dinero al 100%.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SCRIPT (Añadido desde archivo externo) -->
+    <script src="script.js"></script>
+</body>
+
+</html>

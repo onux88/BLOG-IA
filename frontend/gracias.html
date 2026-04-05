@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu compra! | Domina la IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Outfit', 'sans-serif'] },
+                    colors: { dark: '#05070a', card: '#111827', neon: '#00e5ff', purple: '#9d4edd', accent: '#ff2a5f' },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at 50% -20%, rgba(157, 78, 221, 0.4), rgba(5, 7, 10, 1) 60%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #05070a; color: #f3f4f6; }
+        .glass { background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex items-center justify-center bg-hero-glow p-4">
+
+    <div class="glass max-w-lg w-full rounded-3xl p-8 md:p-12 text-center shadow-[0_0_50px_rgba(157,78,221,0.2)]">
+        
+        <div class="w-24 h-24 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center text-5xl mx-auto mb-6 border border-green-500/50">
+            <i class="fa-solid fa-check-double"></i>
+        </div>
+        
+        <h2 class="text-3xl font-heading font-black text-white mb-4">¡Pago Exitoso!</h2>
+        <p class="text-lg text-gray-300 mb-6">Tu pago ha sido procesado de manera segura. Hemos enviado un recibo a tu correo electrónico junto con el <span class="text-neon font-bold">enlace oficial de descarga</span> del PDF.</p>
+        
+        <div class="p-4 bg-card/80 border border-gray-700 mx-auto rounded-xl mb-8 flex items-start gap-4 text-left">
+            <i class="fa-solid fa-envelope-open-text text-purple text-2xl mt-1"></i>
+            <div>
+                <h4 class="text-white font-bold text-sm">Siguiente paso:</h4>
+                <p class="text-xs text-gray-400 leading-relaxed mt-1">Revisa tu bandeja de entrada o la carpeta de spam (correo no deseado) para obtener el número de token que te permitirá la descarga inmediata de tu manual.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="inline-block px-8 py-4 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-xl transition-colors border border-gray-600 shadow-md">
+            Volver a la Página Principal
+        </a>
+    </div>
+
+</body>
+</html>
